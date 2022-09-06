@@ -55,7 +55,7 @@
             // city est une variable, alors je ne met pas de this
             for (let city of this.allCities) {
                 // on recupere le parent, innerHTML pour ajouter le spam
-                this.cities.innerHTML += '<span class="badge text-bg-light">' + city + '</span><i class="del fas-solid fa-x"> x </i>';
+                this.cities.innerHTML += '<span class="badge badge text-bg-dark">' + city + '</span> <i class="del fa-solid fa-xmark"></i>';
             }
         }
     }
