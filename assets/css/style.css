@@ -23,7 +23,7 @@ section {
     justify-content: center;
     font-family: 'Montserrat', sans-serif !important;
     background-color: black;
-    margin: 50px auto;
+    margin: 80px auto;
     padding: 30px;
     border-radius: 5px;
 }
@@ -110,7 +110,6 @@ form>div:last-child{
 }
 
 span{
-    /* margin-right: 10px; */
     margin-bottom: 13px;
     font-weight: 400;
     font-size: 15px !important;

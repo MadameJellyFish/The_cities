@@ -39,14 +39,17 @@
         },
 
         deleteCity: function (e) {
-            console.log(e)
+
             if (e.target.classList.contains('del')) {
                 // pour recuperer l'element innerText, innerHTML, a condition de ne pas avoir des elements à l'interieur
                 let city = e.target.previousElementSibling.innerHTML;
-                console.log(city)
-                
-
+                // prendre le tableau pour eliminer une information dedans, 
+                // filter est un function qui return mois des donnes qui avait dans le tableau, function ville est un callback, le nouveau 
+                this.allCities = this.allCities.filter(function (ville) {
+                    return city !== ville;
+                })
             }
+            this.render();
         },
 
         // la fct rende permetre afficher les informations
